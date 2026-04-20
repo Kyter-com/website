@@ -6,6 +6,10 @@
     "directory": "./dist",
     "not_found_handling": "404-page"
   },
+  "routes": [
+    { "pattern": "kyter.com", "custom_domain": true },
+    { "pattern": "www.kyter.com", "custom_domain": true }
+  ],
   "observability": {
     "enabled": true
   }
