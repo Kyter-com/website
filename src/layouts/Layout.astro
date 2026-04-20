@@ -20,9 +20,10 @@ const canonical = new URL(Astro.url.pathname, Astro.site).toString();
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
-    <meta name="theme-color" content="#09090b" />
+    <meta name="theme-color" content="#e2dbcf" />
     <link rel="canonical" href={canonical} />
-    <link rel="icon" type="image/png" href="/simalytics-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/kyter-logo.svg" />
+    <link rel="apple-touch-icon" href="/kyter-logo.png" />
     <link rel="preconnect" href="https://rsms.me/" />
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
 
@@ -30,7 +31,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site).toString();
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:image" content="/simalytics-icon.png" />
+    <meta property="og:image" content="/kyter-logo.png" />
     <meta name="twitter:card" content="summary_large_image" />
 
     <title>{title}</title>

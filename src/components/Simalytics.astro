@@ -10,7 +10,7 @@ const features = [
   },
   {
     title: "Up next, always",
-    body: "See what to watch next, get episode reminders, and never lose your place.",
+    body: "See what to watch next, get episode reminders, never lose your place.",
   },
   {
     title: "Native, private, fast",
@@ -19,13 +19,13 @@ const features = [
 ];
 ---
 
-<section id="simalytics" class="relative border-t border-zinc-900 py-24">
+<section id="simalytics" class="relative border-t border-[color:var(--color-tan-400)]/40 bg-[color:var(--color-tan-100)] py-24">
   <div class="mx-auto max-w-5xl px-6">
-    <div class="grid items-center gap-12 md:grid-cols-2">
+    <div class="grid items-center gap-12 md:grid-cols-[auto_1fr]">
       <div class="flex justify-center md:justify-start">
         <div class="relative">
           <div
-            class="absolute -inset-10 rounded-full bg-gradient-to-br from-purple-500/30 via-fuchsia-500/20 to-transparent blur-3xl"
+            class="absolute -inset-6 rounded-[3rem] bg-[color:var(--color-tan-300)] blur-2xl opacity-60"
             aria-hidden="true"
           >
           </div>
@@ -34,15 +34,17 @@ const features = [
             alt="Simalytics app icon"
             width="220"
             height="220"
-            class="relative h-52 w-52 rounded-[44px] shadow-2xl shadow-purple-900/40 ring-1 ring-white/10"
+            class="relative h-48 w-48 rounded-[40px] shadow-xl ring-1 ring-black/10"
           />
         </div>
       </div>
 
       <div>
-        <p class="text-sm font-medium tracking-wide text-purple-400 uppercase">Featured app</p>
-        <h2 class="mt-2 text-4xl font-semibold tracking-tight text-white sm:text-5xl">Simalytics</h2>
-        <p class="mt-4 text-lg text-zinc-400">
+        <p class="text-sm font-medium tracking-wide text-[color:var(--color-tan-600)] uppercase">Featured app</p>
+        <h2 class="mt-2 text-4xl font-semibold tracking-tight text-[color:var(--color-ink)] sm:text-5xl">
+          Simalytics
+        </h2>
+        <p class="mt-4 text-lg text-[color:var(--color-tan-600)]">
           Your companion for Simkl — track movies, TV shows, and anime in one place. Browse your watchlists,
           discover new titles, and keep up with your next episodes, all from a sleek, intuitive app.
         </p>
@@ -52,7 +54,7 @@ const features = [
             href="https://apps.apple.com/us/app/simalytics/id6745519450"
             target="_blank"
             rel="noopener"
-            class="inline-flex items-center gap-2 rounded-xl bg-white px-4 py-3 text-sm font-medium text-zinc-900 transition-transform hover:scale-[1.02]"
+            class="inline-flex items-center gap-2 rounded-xl bg-[color:var(--color-ink)] px-4 py-3 text-sm font-medium text-[color:var(--color-tan-100)] transition-transform hover:scale-[1.02]"
           >
             <svg viewBox="0 0 384 512" fill="currentColor" class="h-5 w-5" aria-hidden="true">
               <path
@@ -65,7 +67,7 @@ const features = [
             href="https://github.com/Kyter-com/simalytics-ios"
             target="_blank"
             rel="noopener"
-            class="inline-flex items-center gap-2 rounded-xl border border-zinc-800 bg-zinc-900/40 px-4 py-3 text-sm font-medium text-zinc-200 transition-colors hover:border-zinc-700 hover:bg-zinc-900"
+            class="inline-flex items-center gap-2 rounded-xl border border-[color:var(--color-tan-400)] bg-transparent px-4 py-3 text-sm font-medium text-[color:var(--color-ink)] transition-colors hover:bg-[color:var(--color-tan-200)]"
           >
             <svg viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4" aria-hidden="true">
               <path
@@ -81,9 +83,9 @@ const features = [
     <ul class="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
       {
         features.map((f) => (
-          <li class="rounded-2xl border border-zinc-900 bg-zinc-900/30 p-5 transition-colors hover:border-zinc-800 hover:bg-zinc-900/60">
-            <h3 class="font-medium text-white">{f.title}</h3>
-            <p class="mt-2 text-sm text-zinc-400">{f.body}</p>
+          <li class="rounded-2xl border border-[color:var(--color-tan-400)]/50 bg-[color:var(--color-tan-50)] p-5 transition-colors hover:border-[color:var(--color-ink)]/30">
+            <h3 class="font-medium text-[color:var(--color-ink)]">{f.title}</h3>
+            <p class="mt-2 text-sm text-[color:var(--color-tan-600)]">{f.body}</p>
           </li>
         ))
       }

@@ -1,49 +1,49 @@
 ---
 ---
 
-<section class="relative overflow-hidden pt-32 pb-20">
-  <!-- Background orb -->
-  <div
-    class="pointer-events-none absolute -top-24 left-1/2 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-gradient-to-br from-fuchsia-600/30 via-purple-600/20 to-transparent blur-3xl"
+<section class="relative overflow-hidden pt-24 pb-24 sm:pt-32">
+  <!-- Oversized K watermark -->
+  <svg
+    viewBox="0 0 875.42 630"
+    class="pointer-events-none absolute -right-40 -bottom-20 h-[560px] w-auto text-[color:var(--color-ink)] opacity-[0.04] sm:-right-32"
+    fill="currentColor"
     aria-hidden="true"
   >
-  </div>
-  <!-- Grid overlay -->
-  <div
-    class="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_at_top,black_40%,transparent_80%)]"
-    aria-hidden="true"
-  >
-  </div>
+    <path
+      transform="translate(-562.29 -435)"
+      d="M1427.69,1065H1200.86a10,10,0,0,1-8.13-4.18l-96.91-135.25-97.9,136.65a6.69,6.69,0,0,1-5.42,2.78H838.57a29.23,29.23,0,0,1-29.15-29.17v-.3a215.15,215.15,0,0,0-6.4-52.36c-23.43-94.94-109.16-165.3-211.3-165.3h-.3a29.2,29.2,0,0,1-29.13-29.12v-78a28.58,28.58,0,0,1,28.54-28.67q9.67,0,19.54-.76c111.65-9,198.3-103.38,199-215.4,0-1.12,0-2.24,0-3.36A27.21,27.21,0,0,1,836.54,435H916a29.15,29.15,0,0,1,29.15,29.17v.3A217.37,217.37,0,0,0,1044,646.8L984.32,730c-.7-.46-1.4-.93-2.1-1.43s-1.4-.93-2.13-1.43C939,698.83,903.26,658.6,880.22,614.73c-.83-1.56-1.63-3.1-2.43-4.66-.17-.34-.37-.67-.5-1A322.45,322.45,0,0,1,736.36,750l1,.5c1.56.8,3.1,1.63,4.63,2.43,1.9,1,3.73,2,5.57,3.07s3.73,2.1,5.53,3.17A324.25,324.25,0,0,1,835.22,828c1.17,1.33,2.3,2.7,3.44,4.06.16.2.36.44.5.64,14.6,17.63,26.76,37.13,37.6,57.26.2.34.36.67.53,1a319.28,319.28,0,0,1,19.9,48.74l358.47-500.49a10,10,0,0,1,8.13-4.18h163.9a10,10,0,0,1,8.13,15.82L1221.56,750l214.26,299.18A10,10,0,0,1,1427.69,1065Z"
+    ></path>
+  </svg>
 
-  <div class="relative mx-auto max-w-5xl px-6 text-center">
+  <div class="relative mx-auto max-w-5xl px-6">
     <span
-      class="inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/40 px-3 py-1 text-xs font-medium text-zinc-400"
+      class="inline-flex items-center gap-2 rounded-full border border-[color:var(--color-tan-400)]/60 bg-[color:var(--color-tan-100)]/70 px-3 py-1 text-xs font-medium text-[color:var(--color-tan-600)]"
     >
       <span class="relative flex h-2 w-2">
-        <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
-        <span class="relative inline-flex h-2 w-2 rounded-full bg-emerald-500"></span>
+        <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-[color:var(--color-ink)] opacity-50"></span>
+        <span class="relative inline-flex h-2 w-2 rounded-full bg-[color:var(--color-ink)]"></span>
       </span>
       Simalytics is live on the App Store
     </span>
 
     <h1
-      class="mt-6 bg-gradient-to-b from-white to-zinc-400 bg-clip-text text-5xl font-semibold tracking-tight text-transparent sm:text-6xl md:text-7xl"
+      class="mt-6 max-w-3xl text-5xl font-semibold tracking-tight text-[color:var(--color-ink)] sm:text-6xl md:text-7xl"
     >
-      Indie apps,<br />crafted with care.
+      Small studio.<br /><span class="text-[color:var(--color-tan-600)]">Serious craft.</span>
     </h1>
 
-    <p class="mx-auto mt-6 max-w-xl text-lg text-zinc-400">
-      Kyter is a small studio building polished apps and tools. We focus on clean design, native feel, and zero
-      tracking.
+    <p class="mt-6 max-w-xl text-lg text-[color:var(--color-tan-600)]">
+      Kyter builds native apps and open tools. Home of Simalytics — a sleek companion for Simkl —
+      plus a handful of things we ship and maintain in the open.
     </p>
 
-    <div class="mt-10 flex flex-wrap items-center justify-center gap-3">
+    <div class="mt-10 flex flex-wrap items-center gap-3">
       <a
         href="#simalytics"
-        class="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-medium text-zinc-900 shadow-lg shadow-white/10 transition-transform hover:scale-[1.02]"
+        class="group inline-flex items-center gap-2 rounded-full bg-[color:var(--color-ink)] px-5 py-2.5 text-sm font-medium text-[color:var(--color-tan-100)] transition-transform hover:scale-[1.02]"
       >
         Meet Simalytics
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4 transition-transform group-hover:translate-x-0.5">
           <path
             fill-rule="evenodd"
             d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z"
@@ -54,7 +54,7 @@
         href="https://github.com/Kyter-com"
         target="_blank"
         rel="noopener"
-        class="inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/40 px-5 py-2.5 text-sm font-medium text-zinc-200 transition-colors hover:border-zinc-700 hover:bg-zinc-900"
+        class="inline-flex items-center gap-2 rounded-full border border-[color:var(--color-tan-400)] bg-transparent px-5 py-2.5 text-sm font-medium text-[color:var(--color-ink)] transition-colors hover:bg-[color:var(--color-tan-100)]"
       >
         <svg viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4" aria-hidden="true">
           <path
