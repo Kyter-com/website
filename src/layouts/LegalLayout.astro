@@ -1,0 +1,70 @@
+---
+import Layout from "./Layout.astro";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+
+interface Props {
+  title: string;
+  effectiveDate: string;
+}
+
+const { title, effectiveDate } = Astro.props;
+---
+
+<Layout title={`${title} — Kyter`} description={`${title} for Simalytics.`}>
+  <Nav />
+  <main class="mx-auto max-w-3xl px-6 pt-32 pb-20">
+    <p class="text-sm font-medium tracking-wide text-[color:var(--color-tan-600)] uppercase">
+      Simalytics
+    </p>
+    <h1 class="mt-2 text-4xl font-semibold tracking-tight text-[color:var(--color-ink)] sm:text-5xl">
+      {title}
+    </h1>
+    <p class="mt-3 text-sm text-[color:var(--color-tan-600)]">
+      Effective {effectiveDate}
+    </p>
+
+    <div class="legal mt-10 space-y-5 text-[color:var(--color-ink)]">
+      <slot />
+    </div>
+  </main>
+  <Footer />
+</Layout>
+
+<style is:global>
+  .legal h2 {
+    margin-top: 2.25rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-ink);
+    letter-spacing: -0.01em;
+  }
+  .legal p {
+    line-height: 1.7;
+    color: #2a2622;
+  }
+  .legal a {
+    color: var(--color-ink);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+  .legal a:hover {
+    color: var(--color-tan-600);
+  }
+  .legal ul {
+    padding-left: 1.5rem;
+    list-style: disc;
+  }
+  .legal li {
+    margin-top: 0.5rem;
+    line-height: 1.7;
+    color: #2a2622;
+  }
+  .legal hr {
+    margin: 2.5rem 0;
+    border: 0;
+    border-top: 1px solid var(--color-tan-400);
+  }
+</style>
